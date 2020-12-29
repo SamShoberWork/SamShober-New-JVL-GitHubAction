@@ -79,6 +79,6 @@ How to Use/Setup ?
 Get the VulnerableSpring Project from here:
 https://github.com/CSPF-Founder/VulnerableSpring
 
-trigger a build and scan through github action merge to main/master 3
+trigger a build and scan through github action merge to main/master 4
 trigger a build to scan through cxflow classic 9
 
