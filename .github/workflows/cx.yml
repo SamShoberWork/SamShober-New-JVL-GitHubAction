@@ -33,14 +33,14 @@ jobs:
       with:
         project: SamShober-New-JVL-GitHubAction-action # <-- Insert Checkmarx SAST Project Name
         team: /CxServer # default is /CxServer/SP/Company
-        checkmarx_url: https://sls-routing.ngrok.io  # default is 
-        checkmarx_username: admin   # To be stored in GitHub Secrets.
-        checkmarx_password: Cx!234567 # To be stored in GitHub Secrets.
-        checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C # To be stored in GitHub Secrets.
-        #checkmarx_url: ${{ secrets.CHECKMARX_URL }}  # default is 
-        #checkmarx_username: ${{ secrets.CHECKMARX_USER }}   # To be stored in GitHub Secrets.
-        #checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }} # To be stored in GitHub Secrets.
-        #checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }} # To be stored in GitHub Secrets.
+        #checkmarx_url: https://sls-routing.ngrok.io  # default is 
+        #checkmarx_username: admin   # To be stored in GitHub Secrets.
+        #checkmarx_password: Cx!234567 # To be stored in GitHub Secrets.
+        #checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C # To be stored in GitHub Secrets.
+        checkmarx_url: ${{ secrets.CHECKMARX_URL }}  # default is 
+        checkmarx_username: ${{ secrets.CHECKMARX_USER }}   # To be stored in GitHub Secrets.
+        checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }} # To be stored in GitHub Secrets.
+        checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }} # To be stored in GitHub Secrets.
         break_build: false
         scanners: sast #,sca  #should look like scanners: sast, sca and uncomment scan secrets 
         bug_tracker: Sarif
