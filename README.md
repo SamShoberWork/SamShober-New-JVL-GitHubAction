@@ -81,6 +81,6 @@ https://github.com/CSPF-Founder/VulnerableSpring
 
 trigger a build and scan through github action merge to main/master 20
 
-trigger a build to scan through cxflow classic 14
+trigger a build to scan through cxflow classic 15
 
 
