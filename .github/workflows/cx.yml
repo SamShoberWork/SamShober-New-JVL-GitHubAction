@@ -1,3 +1,19 @@
+#name: cx
+#on:
+  #pull_request:
+  #  branches:
+  #    - master
+#  #push:
+#jobs:
+  #ast_scan:
+    #runs-on: ubuntu-latest
+    #name: Checkmarx scan run
+    #steps:
+      #- name: Run scan
+        #uses: CheckmarxDev/ast-github-action@more_engines
+        #id: scan
+        #with:
+        
 name: cx
 on:
   pull_request:
@@ -13,7 +29,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Checkmarx CxFlow Action
-      uses: checkmarx-ts/checkmarx-cxflow-github-PRaction@v1.1 #Github Action version
+      uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1 #Github Action version
       with:
         project: SamShober-New-JVL-GitHubAction-action # <-- Insert Checkmarx SAST Project Name
         team: /CxServer # default is /CxServer/SP/Company
@@ -41,4 +57,3 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: cx.sarif
-
