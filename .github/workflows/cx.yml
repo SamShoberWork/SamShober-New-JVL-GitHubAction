@@ -21,6 +21,7 @@ jobs:
         checkmarx_username: ${{ secrets.CHECKMARX_USER }}   # To be stored in GitHub Secrets.
         checkmarx_password: ${{ secrets.CHECKMARX_PASSWORD }} # To be stored in GitHub Secrets.
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }} # To be stored in GitHub Secrets.
+        incremental: false
         break_build: false
         scanners: sast #,sca  #should look like scanners: sast, sca and uncomment scan secrets 
         bug_tracker: Sarif
