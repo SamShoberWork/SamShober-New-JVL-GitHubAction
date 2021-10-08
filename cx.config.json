@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "project": "",
+  "team": "/CxServer/SP",
+  "sast": {
+    "preset": "High and Medium",
+    "incremental": "true",
+    "forceScan" : "false",
+  },
+  "additionalProperties" : {
+    "cxFlow": {
+      "bugTracker": "JIRA",
+      "jira": {
+        "project": "APPSEC",
+        },
+      }
+    }
+
+}
